@@ -1,53 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
+<meta name="description" content="Calculator, 2021.01.01">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <script src="scripts.js"></script>
 </head>
 <body>
     
     <h1 align="center">Számológép</h1>
     <p align="center">
-        <textarea id="eredmeny" style="resize: none;" name="eredmeny" rows="2" cols="25" readonly></textarea>
+        <textarea id="eredmeny" style="resize: none;" rows="2" cols="25" readonly></textarea>
+        <br><br>
+        <button id="AC" onclick="torol(value)" title="Törlés">AC</button>
+        <button id="CE" onclick="visszavon(value)" title="Visszaonás">CE</button>
+        <button id="%" value ="%" onclick="muveletek(value)" title="Maradék">%</button>
         <br>
-        <button id="+" value ="+" onclick="szamok(value)" title="Hozzáadás">+</button>
-        <button id="-" value ="-" onclick="szamok(value)" title="Kivonás">-</button>
-        <button id="*" value ="*" onclick="szamok(value)" title="Szorzás">*</button>
-        <button id="/" value ="/" onclick="szamok(value)" title="Osztás">/</button>
-        <button id="CE" onclick="torol(value)" title="Törlés">CE</button>
+        <button id="7" value =7 onclick="muveletek(value)" title="Hét">7</button>
+        <button id="8" value =8 onclick="muveletek(value" title="Nyolc">8</button>
+        <button id="9" value =9 onclick="muveletek(value)" title="Kilenc">9</button>
+        <button id="/" value ="/" onclick="muveletek(value)" title="Osztás">/</button>
         <br>
-        <button id="7" value =7 onclick="szamok(value)" title="Hét">7</button>
-        <button id="8" value =8 onclick="szamok(value)" title="Nyolc">8</button>
-        <button id="9" value =9 onclick="szamok(value)" title="Kilenc">9</button>
+        <button id="6" value =4 onclick="muveletek(value)" title="Négy">4</button>
+        <button id="5" value =5 onclick="muveletek(value)" title="Öt">5</button>
+        <button id="4" value =6 onclick="muveletek(value)" title="Hat">6</button>
+        <button id="*" value ="*" onclick="muveletek(value)" title="Szorzás">*</button>
         <br>
-        <button id="6" value =4 onclick="szamok(value)" title="Négy">4</button>
-        <button id="5" value =5 onclick="szamok(value)" title="Öt">5</button>
-        <button id="4" value =6 onclick="szamok(value)" title="Hat">6</button>
+        <button id="1" value =1 onclick="muveletek(value)" title="Egy">1</button>
+        <button id="2" value =2 onclick="muveletek(value)" title="Kettő">2</button>
+        <button id="3" value =3 onclick="muveletek(value)" title="Három">3</button>
+        <button id="-" value ="-" onclick="muveletek(value)" title="Kivonás">-</button>
         <br>
-        <button id="1" value =1 onclick="szamok(value)" title="Egy">1</button>
-        <button id="2" value =2 onclick="szamok(value)" title="Kettő">2</button>
-        <button id="3" value =3 onclick="szamok(value)" title="Három">3</button>
-        <br>
-        <button id="," value ="." onclick="szamok(value)" title="Tizedevessző">,</button>
-        <button id="0" value =0 onclick="szamok(value)" title="Nulla">0</button>
-        <button id="=" value ="=" onclick="szamol(value)" title="Egyenlő">=</button>
+        <button id="," value ="." onclick="muveletek(value)" title="Tizedevessző">,</button>
+        <button id="0" value =0 onclick="muveletek(value)" title="Nulla">0</button>
+        <button id="=" value ="=" onclick="eredmeny(value)" title="Egyenlő">=</button>
+        <button id="+" value ="+" onclick="muveletek(value)" title="Hozzáadás">+</button>
     </p>
-
-    <script>
-        let eredmeny = document.getElementById("eredmeny");
-
-        function szamok(value) {
-            eredmeny.innerHTML += value;
-        }
-
-        function szamol(value) {
-            eredmeny.value=="" ? "" : eredmeny.innerHTML = eval(eredmeny.value);
-        }
-
-        function torol(value) {
-            eredmeny.value==""?"":eredmeny.innerHTML = "";
-        }
-    </script>
 </body>
 </html>
