@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Calculator</title>
-    <script src="scripts.js"></script>
 </head>
 <body>
     
@@ -14,11 +13,11 @@
         <textarea id="eredmeny" style="resize: none;" rows="2" cols="25" readonly></textarea>
         <br><br>
         <button id="AC" onclick="torol(value)" title="Törlés">AC</button>
-        <button id="CE" onclick="visszavon(value)" title="Visszaonás">CE</button>
+        <button id="CE" onclick="visszavon(value)" title="Visszavonás">CE</button>
         <button id="%" value ="%" onclick="muveletek(value)" title="Maradék">%</button>
         <br>
         <button id="7" value =7 onclick="muveletek(value)" title="Hét">7</button>
-        <button id="8" value =8 onclick="muveletek(value" title="Nyolc">8</button>
+        <button id="8" value =8 onclick="muveletek(value)" title="Nyolc">8</button>
         <button id="9" value =9 onclick="muveletek(value)" title="Kilenc">9</button>
         <button id="/" value ="/" onclick="muveletek(value)" title="Osztás">/</button>
         <br>
@@ -34,8 +33,9 @@
         <br>
         <button id="," value ="." onclick="muveletek(value)" title="Tizedevessző">,</button>
         <button id="0" value =0 onclick="muveletek(value)" title="Nulla">0</button>
-        <button id="=" value ="=" onclick="eredmeny(value)" title="Egyenlő">=</button>
+        <button id="=" value ="=" onclick="kiszamol(value)" title="Egyenlő">=</button>
         <button id="+" value ="+" onclick="muveletek(value)" title="Hozzáadás">+</button>
     </p>
+    <script src="scripts.js"></script>
 </body>
 </html>
