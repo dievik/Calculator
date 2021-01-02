@@ -4,7 +4,7 @@ function muveletek(value) {
   eredmeny.innerHTML += value;
 }
 
-function eredmeny(value) {
+function kiszamol(value) {
   eredmeny.value=="" ? "" : eredmeny.innerHTML = eval(eredmeny.value);
 }
 
