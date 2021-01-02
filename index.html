@@ -5,37 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <h1 align="center">Számológép</h1>
-    <p align="center">
-        <textarea id="eredmeny" style="resize: none;" rows="2" cols="25" readonly></textarea>
-        <br><br>
-        <button id="AC" onclick="torol(value)" title="Törlés">AC</button>
-        <button id="CE" onclick="visszavon(value)" title="Visszavonás">CE</button>
-        <button id="%" value ="%" onclick="muveletek(value)" title="Maradék">%</button>
+    <div align="center">
+        <textarea id="eredmeny" rows="2" cols="25" onkeydown="billentyuzet(event)"
+        autofocus onblur="this.focus()" readonly placeholder="2 + 2 = 5"></textarea>
         <br>
-        <button id="7" value =7 onclick="muveletek(value)" title="Hét">7</button>
-        <button id="8" value =8 onclick="muveletek(value)" title="Nyolc">8</button>
-        <button id="9" value =9 onclick="muveletek(value)" title="Kilenc">9</button>
-        <button id="/" value ="/" onclick="muveletek(value)" title="Osztás">/</button>
+        <button id="AC" onclick="torol(value)">&#10005;</button>
+        <button id="CE" onclick="visszavon(value)">&#9003;</button>
+        <button id="π" value =3.1415926535 onclick="muveletek(value)">π</button>
+        <button id="%" value ="%" onclick="muveletek(value)">%</button>
         <br>
-        <button id="6" value =4 onclick="muveletek(value)" title="Négy">4</button>
-        <button id="5" value =5 onclick="muveletek(value)" title="Öt">5</button>
-        <button id="4" value =6 onclick="muveletek(value)" title="Hat">6</button>
-        <button id="*" value ="*" onclick="muveletek(value)" title="Szorzás">*</button>
+        <button id="7" value =7 onclick="muveletek(value)">7</button>
+        <button id="8" value =8 onclick="muveletek(value)">8</button>
+        <button id="9" value =9 onclick="muveletek(value)">9</button>
+        <button id="/" value ="/" onclick="muveletek(value)">/</button>
         <br>
-        <button id="1" value =1 onclick="muveletek(value)" title="Egy">1</button>
-        <button id="2" value =2 onclick="muveletek(value)" title="Kettő">2</button>
-        <button id="3" value =3 onclick="muveletek(value)" title="Három">3</button>
-        <button id="-" value ="-" onclick="muveletek(value)" title="Kivonás">-</button>
+        <button id="6" value =4 onclick="muveletek(value)">4</button>
+        <button id="5" value =5 onclick="muveletek(value)">5</button>
+        <button id="4" value =6 onclick="muveletek(value)">6</button>
+        <button id="*" value ="*" onclick="muveletek(value)">*</button>
         <br>
-        <button id="," value ="." onclick="muveletek(value)" title="Tizedevessző">,</button>
-        <button id="0" value =0 onclick="muveletek(value)" title="Nulla">0</button>
-        <button id="=" value ="=" onclick="kiszamol(value)" title="Egyenlő">=</button>
-        <button id="+" value ="+" onclick="muveletek(value)" title="Hozzáadás">+</button>
-    </p>
+        <button id="1" value =1 onclick="muveletek(value)">1</button>
+        <button id="2" value =2 onclick="muveletek(value)">2</button>
+        <button id="3" value =3 onclick="muveletek(value)">3</button>
+        <button id="-" value ="-" onclick="muveletek(value)">-</button>
+        <br>
+        <button id="," value ="." onclick="muveletek(value)">,</button>
+        <button id="0" value =0 onclick="muveletek(value)">0</button>
+        <button id="egyenlo" value ="=" onclick="kiszamol(value)">=</button>
+        <button id="+" value ="+" onclick="muveletek(value)">+</button>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
