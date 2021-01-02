@@ -1,0 +1,33 @@
+textarea {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    padding: 15px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+button {
+    box-sizing: border-box;
+    width: 3%;
+    height: 3%;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8f8f8;
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1;
+}
