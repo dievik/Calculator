@@ -1,2 +1,2 @@
 # Calculator
-Simple Calculator in Javascript, styled with CSS
+Simple Calculator in Javascript, styled with CSS.
